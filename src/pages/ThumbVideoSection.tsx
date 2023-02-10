@@ -31,7 +31,7 @@ const ThumbVideoSection: React.FC = () => {
           spacingY={20}
           h="100%"
           alignItems="center"
-          px={20}
+          px={[10, 20]}
           py={{ base: 20, lg: 0 }}
         >
           <Box>
