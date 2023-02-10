@@ -2,11 +2,8 @@ import {
   AspectRatio,
   Box,
   Button,
-  Container,
-  Flex,
   Image,
   SimpleGrid,
-  Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -18,6 +15,7 @@ const ThumbVideoSection: React.FC = () => {
         bg="gray"
         w="100vw"
         h={{ base: "", lg: "100vh" }}
+        minH="800px"
         position="relative"
       >
         <Image
@@ -56,7 +54,10 @@ const ThumbVideoSection: React.FC = () => {
               align={{ base: "center", lg: "flex-start" }}
               textAlign={{ base: "center", lg: "left" }}
             >
-              <AspectRatio width="460px" height="315px">
+              <AspectRatio
+                width={{ base: "360px", lg: "460px" }}
+                height="315px"
+              >
                 <iframe
                   src="https://www.youtube.com/embed/4fhl_YB597s?controls=0"
                   title="YouTube video player"

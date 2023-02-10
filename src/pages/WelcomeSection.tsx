@@ -12,7 +12,7 @@ const WelcomeSection: React.FC = () => {
 
   return (
     <>
-      <Box bg="black" w="100vw" h="100vh" pos="relative">
+      <Box bg="black" w="100vw" h="100vh" minH="900px" pos="relative">
         <Image
           pos="absolute"
           margin="auto"

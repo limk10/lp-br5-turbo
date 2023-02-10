@@ -12,6 +12,15 @@ function variantTitle() {
   };
 }
 
+function variantTitle2() {
+  return {
+    color: "primary.600",
+    fontSize: [20, 50],
+    fontWeight: "bold",
+    lineHeight: 1,
+  };
+}
+
 function variantDescription() {
   return {
     fontSize: [25, 30],
@@ -28,6 +37,7 @@ function variantDescription2() {
 
 const variants = {
   title: variantTitle,
+  title2: variantTitle2,
   description: variantDescription,
   description2: variantDescription2,
 };
