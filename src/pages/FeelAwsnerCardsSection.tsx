@@ -38,9 +38,9 @@ const FeelAwsnerCardsSection: React.FC = () => {
             zIndex={9}
           >
             <VStack spacing={14} mb={10}>
-              <Text variant="description2">
+              {/* <Text variant="description2">
                 Se identificou com estas questões e quer mudar de vida?
-              </Text>
+              </Text> */}
 
               <VStack mt={4}>
                 <Text variant="description3">
