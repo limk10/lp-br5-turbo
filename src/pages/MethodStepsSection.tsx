@@ -16,8 +16,9 @@ const MethodStepsSection: React.FC = () => {
           Nossa metodologia em 5 passos:
         </Text>
 
-        <Box px={[5, 20]}>
+        <Box w="100%" px={[5, 40]}>
           <Image
+            style={{ margin: "0 auto" }}
             display={{ base: "none", lg: "inline" }}
             src="./assets/images/methodssteps-desktop.png"
           />

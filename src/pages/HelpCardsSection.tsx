@@ -52,7 +52,7 @@ const HelpCardsSection: React.FC = () => {
         <SimpleGrid
           columns={{ base: 1, lg: 3 }}
           px={{ base: 5, md: 20 }}
-          mt={[20, 10]}
+          mt={[14, 10]}
           gap={[10, 10]}
           justifyItems="center"
         >
