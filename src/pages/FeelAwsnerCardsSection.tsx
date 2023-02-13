@@ -1,6 +1,25 @@
-import { Box, Button, Fade, Flex, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Fade,
+  Flex,
+  Image,
+  ScaleFade,
+  SlideFade,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 
 const FeelAwsnerCardsSection: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 1000);
+  }, []);
+
   return (
     <>
       <Box
@@ -13,23 +32,28 @@ const FeelAwsnerCardsSection: React.FC = () => {
         minH="900px"
         pos="relative"
       >
-        <Image
-          pos="absolute"
-          bottom={0}
-          left={0}
-          zIndex={0}
-          w={["190px", "300px", "340px", "470px"]}
-          src="./assets/images/marcelo-pires-2.png"
-          display={["none", "inline"]}
-        />
-        <Image
-          pos="absolute"
-          bottom={0}
-          right={0}
-          w={["180px", "350px", "390px", "560px"]}
-          src="./assets/images/alessandro-nogueira-2.png"
-          display={["none", "inline"]}
-        />
+        <Fade in={isOpen}>
+          <Image
+            pos="absolute"
+            bottom={0}
+            left={0}
+            zIndex={0}
+            w={["190px", "300px", "340px", "470px"]}
+            src="./assets/images/marcelo-pires-2.png"
+            display={["none", "inline"]}
+          />
+        </Fade>
+
+        <Fade in={isOpen}>
+          <Image
+            pos="absolute"
+            bottom={0}
+            right={0}
+            w={["180px", "350px", "390px", "560px"]}
+            src="./assets/images/alessandro-nogueira-2.png"
+            display={["none", "inline"]}
+          />
+        </Fade>
 
         <Flex h="100%" alignItems="center" justifyContent="center">
           <Box

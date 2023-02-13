@@ -1,5 +1,15 @@
-import { Box, Button, Fade, Flex, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Fade,
+  Flex,
+  HStack,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { BsInstagram } from "react-icons/bs";
 
 const WelcomeSection: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +53,12 @@ const WelcomeSection: React.FC = () => {
           />
         </Fade>
 
-        <Flex h="100%" alignItems="center" justifyContent="center">
+        <Flex
+          h="100%"
+          alignItems="center"
+          justifyContent="center"
+          flexDirection="column"
+        >
           <Box w={["90%", "80%", "70%", "60%", "40%"]} textAlign="center">
             <VStack spacing={8}>
               <Text variant="title">NÓS PODEMOS TE AJUDAR!</Text>
@@ -62,6 +77,35 @@ const WelcomeSection: React.FC = () => {
             </Box>
           </Box>
         </Flex>
+
+        <Box
+          pos="absolute"
+          left={0}
+          right={0}
+          bottom={3}
+          marginLeft="auto"
+          marginRight="auto"
+          w={{ base: "95%", lg: "80%" }}
+          display={["none", "inline"]}
+        >
+          <Flex
+            justifyContent="space-between"
+            flexDirection={{ base: "column", md: "row" }}
+          >
+            <HStack justify={{ base: "center", md: "" }} mt={5}>
+              <BsInstagram fontSize={28} color="#AB8F39" />
+              <Text variant="description3" fontSize={[18, 26]}>
+                @marcelo.pires.oficial
+              </Text>
+            </HStack>
+            <HStack justify={{ base: "center", md: "" }} mt={5}>
+              <Text variant="description3" fontSize={[18, 26]}>
+                @alessandronogueira1
+              </Text>
+              <BsInstagram fontSize={28} color="#AB8F39" />
+            </HStack>
+          </Flex>
+        </Box>
       </Box>
     </>
   );
