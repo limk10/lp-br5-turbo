@@ -3,14 +3,16 @@ import { Box, Button, Fade, Flex, Image, Text, VStack } from "@chakra-ui/react";
 const FeelAwsnerCardsSection: React.FC = () => {
   return (
     <>
-      <Box bg="black" w="100vw" h="100vh" minH="900px" pos="relative">
-        <Image
-          position="absolute"
-          src="./assets/images/bg-awsnercardsection.png"
-          objectFit="cover"
-          w="100%"
-          h="100%"
-        />
+      <Box
+        bg="black"
+        bgImage="./assets/images/bg-awsnercardsection.png"
+        bgSize="cover"
+        bgPosition="center"
+        w="100vw"
+        h="100vh"
+        minH="900px"
+        pos="relative"
+      >
         <Image
           pos="absolute"
           bottom={0}

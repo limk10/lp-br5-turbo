@@ -17,14 +17,10 @@ const ThumbVideoSection: React.FC = () => {
         h={{ base: "", lg: "100vh" }}
         minH="800px"
         position="relative"
+        bgImage="./assets/images/bg-videothumbsection.png"
+        bgSize="cover"
+        bgPosition="center"
       >
-        <Image
-          position="absolute"
-          src="./assets/images/bg-videothumbsection.png"
-          objectFit="cover"
-          w="100%"
-          h="100%"
-        />
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}
           spacing={10}

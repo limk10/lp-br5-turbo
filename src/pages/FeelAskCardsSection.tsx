@@ -16,7 +16,8 @@ const FeelAskCardsSection: React.FC = () => {
         py={{ base: 14, lg: 20 }}
         position="relative"
         bgImg="./assets/images/bg-askcardsection.png"
-        bgPos="center"
+        bgSize="cover"
+        bgPosition="center"
       >
         <Text mb={20} textAlign="center" variant="title2">
           Você já se sentiu assim?
@@ -30,7 +31,7 @@ const FeelAskCardsSection: React.FC = () => {
           px={{ base: 5, md: 20 }}
         >
           {asks.map((text) => (
-            <InfoCard key={text} text={text} />
+            <InfoCard key={text} description={text} />
           ))}
         </SimpleGrid>
       </Box>
