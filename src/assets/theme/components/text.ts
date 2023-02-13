@@ -15,7 +15,7 @@ function variantTitle() {
 function variantTitle2() {
   return {
     color: "primary.600",
-    fontSize: [25, 50],
+    fontSize: [30, 60],
     fontWeight: "bold",
     lineHeight: 1,
   };
