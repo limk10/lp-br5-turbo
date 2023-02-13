@@ -27,6 +27,6 @@ export const App = () => (
 
     <ShowcaseSection />
     <MentorsSection />
-    {/* <ContactUsSection /> */}
+    <ContactUsSection />
   </>
 );

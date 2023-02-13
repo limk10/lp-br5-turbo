@@ -2,21 +2,6 @@ import { Box, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import InfoCard from "../components/Card";
 
 const HelpCardsSection: React.FC = () => {
-  const asks = [
-    {
-      title: "Marketing",
-      description: "Materiais de apoio e diretivos de campanha",
-    },
-    {
-      title: "23 anos",
-      description: "de experiência e solidez",
-    },
-    {
-      title: "Treinamentos",
-      description: "Diversos cursos e materiais de apoio",
-    },
-  ];
-
   return (
     <>
       <Box

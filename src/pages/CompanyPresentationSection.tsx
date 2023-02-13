@@ -1,12 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  HStack,
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
 
 const CompanyPresentationSection: React.FC = () => {
   const companies = [
