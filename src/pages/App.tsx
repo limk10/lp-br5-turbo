@@ -24,6 +24,7 @@ export const App = () => (
     <MethodStepsSection />
     <CompanyPresentationSection />
     <ServicesPresentationSection />
+
     <ShowcaseSection />
     <MentorsSection />
     <ContactUsSection />
