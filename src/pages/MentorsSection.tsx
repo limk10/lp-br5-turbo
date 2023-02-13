@@ -4,11 +4,14 @@ import {
   Center,
   Fade,
   Flex,
+  HStack,
   Image,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+
+import { BsInstagram } from "react-icons/bs";
 
 const MentorsSection: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +30,9 @@ const MentorsSection: React.FC = () => {
         // h="100vh"
         minH="900px"
         pos="relative"
+        bgImg="./assets/images/bg-mentorssection.png"
+        bgSize="cover"
+        bgPosition="center"
         py={{ base: 5, lg: 14 }}
       >
         <Fade in={isOpen}>
@@ -59,7 +65,7 @@ const MentorsSection: React.FC = () => {
             pos="absolute"
             bottom={0}
             right={0}
-            w={["180px", "200px", "246px", "300px", "400px"]}
+            w={["180px", "200px", "246px", "300px", "360px"]}
             src="./assets/images/alessandro-nogueira-1.png"
             display={{ base: "none", md: "inline" }}
           />
@@ -68,8 +74,7 @@ const MentorsSection: React.FC = () => {
         <Flex h="100%" justifyContent="center">
           <Box
             w={{
-              base: "100%",
-              sm: "90%",
+              base: "98%",
               md: "45%",
               lg: "40%",
               xl: "40%",
@@ -99,9 +104,12 @@ const MentorsSection: React.FC = () => {
                     PNL Practitioner com mais de 22 anos de experiência no
                     mercado de seguros
                   </Text>
-                  <Text variant="description3" fontSize={[16, 24]}>
-                    @marcelo.pires.oficial
-                  </Text>
+                  <HStack justify="flex-start" align="center" mt={5}>
+                    <BsInstagram fontSize={24} color="#AB8F39" />
+                    <Text variant="description3" fontSize={[16, 24]}>
+                      @marcelo.pires.oficial
+                    </Text>
+                  </HStack>
                 </Box>
               </VStack>
 
@@ -115,13 +123,16 @@ const MentorsSection: React.FC = () => {
                     textAlign="right"
                     fontWeight={200}
                   >
-                    Administrador, Pós-graduado, MBA em Gestão Empresarial FGV,
-                    PNL Practitioner com mais de 22 anos de experiência no
-                    mercado de seguros
+                    Administrador, Pós-graduado, MBA em Gestão Comercial FGV,
+                    PNL Practitioner com mais de 14 anos de experiência no
+                    mercado financeiro
                   </Text>
-                  <Text variant="description3" fontSize={[16, 24]}>
-                    @alessandronogueira1
-                  </Text>
+                  <HStack justify="flex-end" align="center" mt={5}>
+                    <Text variant="description3" fontSize={[16, 24]}>
+                      @alessandronogueira1
+                    </Text>
+                    <BsInstagram fontSize={24} color="#AB8F39" />
+                  </HStack>
                 </Box>
 
                 <Image
