@@ -35,11 +35,20 @@ function variantDescription2() {
   };
 }
 
+function variantDescription3() {
+  return {
+    color: "primary.600",
+    fontSize: [35, 45],
+    fontWeight: 300,
+  };
+}
+
 const variants = {
   title: variantTitle,
   title2: variantTitle2,
   description: variantDescription,
   description2: variantDescription2,
+  description3: variantDescription3,
 };
 
 const buttonConfig = { baseStyle, variants };

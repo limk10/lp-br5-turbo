@@ -27,7 +27,7 @@ const FeelAskCardsSection: React.FC = () => {
           justifyItems="center"
           spacing={10}
           h="100%"
-          px={20}
+          px={{ base: 5, md: 20 }}
         >
           {asks.map((text) => (
             <InfoCard key={text} text={text} />
