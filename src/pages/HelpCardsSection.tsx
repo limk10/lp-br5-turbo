@@ -42,16 +42,13 @@ const HelpCardsSection: React.FC = () => {
           justifyItems="center"
         >
           <InfoCard
-            title="Backoffice"
-            description="Absorvemos processos burocráticos operacionais"
+            title="Marketing"
+            description="Materiais de apoio e diretivos de campanha"
           />
+          <InfoCard title="23 anos" description="de experiência e solidez" />
           <InfoCard
-            title="Especialistas"
-            description="suporte no processo de venda"
-          />
-          <InfoCard
-            title="Especialistas"
-            description="suporte no processo de venda"
+            title="treinamentos"
+            description="Diversos cursos e materiais de apoio"
           />
         </SimpleGrid>
       </Box>

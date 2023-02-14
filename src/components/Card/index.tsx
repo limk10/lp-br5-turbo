@@ -20,7 +20,7 @@ const InfoCard = ({ title, description }: Props) => {
       boxShadow={"9px 8px 0px -1px #AB8F39"}
     >
       {title && (
-        <Text textAlign="center" variant="description">
+        <Text textAlign="center" variant="description" fontWeight={600}>
           {title}
         </Text>
       )}

@@ -63,9 +63,10 @@ const ThumbVideoSection: React.FC = () => {
               </AspectRatio>
 
               <Text variant="description2">
-                A BR5 Turbo é uma plataforma Aceleradora de Renda de 3 Empresas
-                consolidadas e mais de 200 Produtos Escaláveis com uma equipe
-                Especializada para dar suporte
+                A BR5 Turbo é uma plataforma <b>Aceleradora de Renda</b> de 3{" "}
+                <b>Empresas consolidadas</b> e mais de{" "}
+                <b>200 Produtos Escaláveis</b>
+                com uma equipe <b>Especializada</b> para dar suporte
               </Text>
               <Button onClick={() => (window.location.href = "#contact-us")}>
                 QUERO ACELERAR MINHA RENDA
