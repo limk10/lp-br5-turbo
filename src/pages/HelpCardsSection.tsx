@@ -47,7 +47,7 @@ const HelpCardsSection: React.FC = () => {
           />
           <InfoCard title="23 anos" description="de experiência e solidez" />
           <InfoCard
-            title="treinamentos"
+            title="Treinamentos"
             description="Diversos cursos e materiais de apoio"
           />
         </SimpleGrid>
