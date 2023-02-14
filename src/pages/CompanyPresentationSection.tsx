@@ -48,6 +48,7 @@ const CompanyPresentationSection: React.FC = () => {
         bgImg="./assets/images/bg-helpcardssection.png"
         bgSize="cover"
         bgPosition="center"
+        id="company-presentation"
       >
         <Box bg="linear-gradient(to right, #AB8F39 , #FDDB5C)" py={2}>
           <Text

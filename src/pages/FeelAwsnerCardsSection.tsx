@@ -31,6 +31,7 @@ const FeelAwsnerCardsSection: React.FC = () => {
         h="100vh"
         minH="900px"
         pos="relative"
+        id="feel-awsner"
       >
         <Fade in={isOpen}>
           <Image
@@ -83,7 +84,7 @@ const FeelAwsnerCardsSection: React.FC = () => {
             />
 
             <Box mt={20}>
-              <Button boxShadow="0px 0px 10px 4px rgba(224,169,53,1)">
+              <Button onClick={() => (window.location.href = "#contact-us")}>
                 QUERO ACELERAR MINHA RENDA
               </Button>
             </Box>

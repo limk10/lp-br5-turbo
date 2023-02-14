@@ -21,6 +21,7 @@ const ContactUsSection: React.FC = () => {
         bgImg="./assets/images/bg-contactus.png"
         bgSize="cover"
         bgPosition="center"
+        id="contact-us"
       >
         <Box>
           <VStack px={{ base: 5, md: 20 }} spacing={10}>
@@ -65,9 +66,7 @@ const ContactUsSection: React.FC = () => {
             </Flex>
 
             <Center py={10}>
-              <Button boxShadow="0px 0px 10px 4px rgba(224,169,53,1)">
-                QUERO ACELERAR MINHA RENDA
-              </Button>
+              <Button>QUERO ACELERAR MINHA RENDA</Button>
             </Center>
 
             <Text variant="description2" textAlign="center">

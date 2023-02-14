@@ -1,5 +1,5 @@
 import Fonts from "./fonts";
 
-const typography = { Fonts };
+const typography = { ...Fonts };
 
 export default typography;

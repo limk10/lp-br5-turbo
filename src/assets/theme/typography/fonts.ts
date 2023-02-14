@@ -1,6 +1,6 @@
 const fontConfig = {
   fonts: {
-    body: "Poppins, sans-serif",
+    body: `'UTILY-MEDIUM', sans-serif`,
   },
 };
 

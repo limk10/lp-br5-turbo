@@ -5,6 +5,7 @@ import theme from "./assets/theme";
 import { App } from "./pages/App";
 
 import "react-multi-carousel/lib/styles.css";
+import Fonts from "./fonts";
 
 const container = document.getElementById("root");
 if (!container) throw new Error("Failed to find the root element");
@@ -12,6 +13,7 @@ const root = ReactDOM.createRoot(container);
 
 root.render(
   <StrictMode>
+    <Fonts />
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>

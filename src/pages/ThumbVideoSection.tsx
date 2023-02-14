@@ -67,7 +67,7 @@ const ThumbVideoSection: React.FC = () => {
                 consolidadas e mais de 200 Produtos Escaláveis com uma equipe
                 Especializada para dar suporte
               </Text>
-              <Button boxShadow="0px 0px 10px 4px rgba(224,169,53,1)">
+              <Button onClick={() => (window.location.href = "#contact-us")}>
                 QUERO ACELERAR MINHA RENDA
               </Button>
             </VStack>
