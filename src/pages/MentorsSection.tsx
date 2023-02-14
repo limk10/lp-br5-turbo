@@ -34,37 +34,41 @@ const MentorsSection: React.FC = () => {
         bgPosition="center"
         py={{ base: 5, lg: 14 }}
       >
-        <>
+        <Fade in={isOpen}>
+          <>
+            <Image
+              pos="absolute"
+              bottom={{ base: "", md: "20%" }}
+              top={{ base: "5%", md: "" }}
+              left="0%"
+              w={["150px", "200px", "256px", "340px", "420px"]}
+              src="./assets/images/marcelo-pires-3.png"
+              display={{ base: "none", md: "inline" }}
+            />
+
+            <Box
+              pos="absolute"
+              bottom={{ base: "30%", md: "55%", lg: "19%" }}
+              left={{ base: "2%", md: "5%" }}
+              display={{ base: "none", xl: "inline" }}
+            >
+              <Button onClick={() => (window.location.href = "#contact-us")}>
+                QUERO ACELERAR MINHA RENDA
+              </Button>
+            </Box>
+          </>
+        </Fade>
+
+        <Fade in={isOpen}>
           <Image
             pos="absolute"
-            bottom={{ base: "", md: "20%" }}
-            top={{ base: "5%", md: "" }}
-            left="0%"
-            w={["150px", "200px", "256px", "340px", "420px"]}
-            src="./assets/images/marcelo-pires-3.png"
+            bottom={0}
+            right={0}
+            w={["180px", "200px", "246px", "300px", "360px"]}
+            src="./assets/images/alessandro-nogueira-1.png"
             display={{ base: "none", md: "inline" }}
           />
-
-          <Box
-            pos="absolute"
-            bottom={{ base: "30%", md: "55%", lg: "19%" }}
-            left={{ base: "2%", md: "5%" }}
-            display={{ base: "none", xl: "inline" }}
-          >
-            <Button onClick={() => (window.location.href = "#contact-us")}>
-              QUERO ACELERAR MINHA RENDA
-            </Button>
-          </Box>
-        </>
-
-        <Image
-          pos="absolute"
-          bottom={0}
-          right={0}
-          w={["180px", "200px", "246px", "300px", "360px"]}
-          src="./assets/images/alessandro-nogueira-1.png"
-          display={{ base: "none", md: "inline" }}
-        />
+        </Fade>
 
         <Flex h="100%" justifyContent="center">
           <Box
