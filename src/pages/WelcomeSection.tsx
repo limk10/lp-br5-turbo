@@ -22,7 +22,13 @@ const WelcomeSection: React.FC = () => {
 
   return (
     <>
-      <Box bg="black" w="100vw" h="100vh" minH="900px" pos="relative">
+      <Box
+        bg="black"
+        w="100vw"
+        h="100vh"
+        maxH={{ base: "750px", lg: "900px" }}
+        pos="relative"
+      >
         <Image
           pos="absolute"
           margin="auto"
@@ -37,9 +43,9 @@ const WelcomeSection: React.FC = () => {
             pos="absolute"
             bottom={0}
             left={0}
-            w={["190px", "260px", "340px", "480px"]}
+            w={["210px", "260px", "340px", "480px"]}
             src="./assets/images/marcelo-pires-1.png"
-            display={["none", "inline"]}
+            // display={["none", "inline"]}
           />
         </Fade>
         <Fade in={isOpen}>
@@ -49,7 +55,7 @@ const WelcomeSection: React.FC = () => {
             right={0}
             w={["180px", "230px", "300px", "400px"]}
             src="./assets/images/alessandro-nogueira-1.png"
-            display={["none", "inline"]}
+            // display={["none", "inline"]}
           />
         </Fade>
 
@@ -86,7 +92,7 @@ const WelcomeSection: React.FC = () => {
           marginLeft="auto"
           marginRight="auto"
           w={{ base: "95%", lg: "80%" }}
-          display={["none", "inline"]}
+          // display={["none", "inline"]}
         >
           <Flex
             justifyContent="space-between"

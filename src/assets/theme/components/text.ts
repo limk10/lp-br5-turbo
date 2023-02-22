@@ -38,7 +38,7 @@ function variantDescription2() {
 function variantDescription3() {
   return {
     color: "primary.600",
-    fontSize: [35, 45],
+    fontSize: [35, 40, 45],
     fontWeight: 300,
   };
 }

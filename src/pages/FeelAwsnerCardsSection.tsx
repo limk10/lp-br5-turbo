@@ -1,14 +1,4 @@
-import {
-  Box,
-  Button,
-  Fade,
-  Flex,
-  Image,
-  ScaleFade,
-  SlideFade,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Button, Fade, Flex, Image, Text, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 const FeelAwsnerCardsSection: React.FC = () => {
@@ -29,9 +19,9 @@ const FeelAwsnerCardsSection: React.FC = () => {
         bgPosition="center"
         w="100vw"
         h="100vh"
-        minH="900px"
         pos="relative"
         id="feel-awsner"
+        pt={{ base: 14, lg: 0 }}
       >
         <Fade in={isOpen}>
           <Image
@@ -39,9 +29,9 @@ const FeelAwsnerCardsSection: React.FC = () => {
             bottom={0}
             left={0}
             zIndex={0}
-            w={["190px", "300px", "340px", "470px"]}
+            w={["185px", "300px", "340px", "470px"]}
             src="./assets/images/marcelo-pires-2.png"
-            display={["none", "inline"]}
+            // display={["none", "inline"]}
           />
         </Fade>
 
@@ -50,9 +40,9 @@ const FeelAwsnerCardsSection: React.FC = () => {
             pos="absolute"
             bottom={0}
             right={0}
-            w={["180px", "350px", "390px", "560px"]}
+            w={["220px", "350px", "390px", "560px"]}
             src="./assets/images/alessandro-nogueira-2.png"
-            display={["none", "inline"]}
+            // display={["none", "inline"]}
           />
         </Fade>
 
@@ -62,7 +52,7 @@ const FeelAwsnerCardsSection: React.FC = () => {
             textAlign="center"
             zIndex={9}
           >
-            <VStack spacing={14} mb={10}>
+            <VStack mb={10}>
               {/* <Text variant="description2">
                 Se identificou com estas questões e quer mudar de vida?
               </Text> */}
@@ -77,7 +67,7 @@ const FeelAwsnerCardsSection: React.FC = () => {
             </VStack>
 
             <Image
-              zIndex={100}
+              zIndex={999}
               style={{ margin: "0 auto" }}
               w={{ base: "35vw", lg: "25vw", xl: "15vw" }}
               src="./assets/images/logo-1.svg"
